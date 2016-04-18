@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview_soru_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:text="Soru 1"/>
+
+    <TextView
+        android:id="@+id/textview_soru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_soru_no">
+
+        <RadioButton
+            android:id="@+id/answer_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer A"/>
+
+        <RadioButton
+            android:id="@+id/answer_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer B"/>
+
+        <RadioButton
+            android:id="@+id/answer_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer C"/>
+
+        <RadioButton
+            android:id="@+id/answer_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer D"/>
+
+        <RadioButton
+            android:id="@+id/answer_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer E"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/gonder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:text="Gönder"/>
+    <EditText
+        android:id="@+id/math_playground"
+        android:hint="Burayı karalama olarak kullanabilirsiniz"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
